@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+li p {
+    margin: 8px 0;
+}
+
+.spot-id {
+    font-weight: bold;
+    color: #17a2b8; /* Info blue */
+}
+
+.location {
+    font-style: italic;
+    color: #6c757d; /* Muted grey */
+}
+
+.size {
+    color: #28a745; /* Success green */
+    font-weight: 500;
+}
+
+.no-spots {
+    color: #dc3545; /* Danger red */
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background-color: #fbeae8;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+}
+
+/* Adding some more specific styles for the labels if needed */
+.label {
+    font-weight: bold;
+}

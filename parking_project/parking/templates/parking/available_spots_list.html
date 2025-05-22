@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_title|default:"Available Parking Spots" }}</title>
+    <link rel="stylesheet" href="{% static 'parking/style.css' %}">
+</head>
+<body>
+    <h1>{{ page_title|default:"Available Parking Spots" }}</h1>
+
+    {% if available_spots %}
+        <ul>
+            {% for spot in available_spots %}
+                <li>
+                    <p><span class="label spot-id">Spot Number:</span> {{ spot.spot_number }}</p>
+                    <p><span class="label location">Location:</span> {{ spot.location_description }}</p>
+                    <p><span class="label size">Size:</span> {{ spot.get_size_display }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p class="no-spots">No parking spots are currently available.</p>
+    {% endif %}
+</body>
+</html>
